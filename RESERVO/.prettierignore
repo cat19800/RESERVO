@@ -1,0 +1,13 @@
+node_modules
+.next
+out
+build
+dist
+generated
+coverage
+pnpm-lock.yaml
+public
+docs
+*.docx
+.agents
+skills-lock.json
