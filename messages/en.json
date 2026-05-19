@@ -1,0 +1,624 @@
+{
+  "app": {
+    "name": "RESERVO",
+    "tagline": "Book appointments simply and quickly"
+  },
+  "common": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "signOut": "Sign out",
+    "email": "Email",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "phone": "Phone",
+    "city": "City",
+    "address": "Address",
+    "bio": "Tell us about yourself",
+    "loading": "Loading…",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "save": "Save",
+    "saving": "Saving…",
+    "saved": "Saved",
+    "back": "Back",
+    "next": "Next",
+    "finish": "Finish",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "confirm": "Confirm",
+    "close": "Close",
+    "languageSwitcher": "Language",
+    "optional": "optional"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Sign in",
+      "subtitle": "Welcome back to RESERVO.",
+      "submit": "Sign in",
+      "noAccount": "Don't have an account?",
+      "createOne": "Create one",
+      "forgotPassword": "Forgot password?"
+    },
+    "signUp": {
+      "title": "Create your account",
+      "subtitle": "A few details and you're set.",
+      "submit": "Create account",
+      "haveAccount": "Already have an account?",
+      "signInLink": "Sign in",
+      "acceptTerms": "I accept the Terms of Use and Privacy Policy"
+    },
+    "errors": {
+      "passwordTooShort": "Password must be at least 8 characters",
+      "firstNameRequired": "First name is required",
+      "lastNameRequired": "Last name is required",
+      "acceptTermsRequired": "You must accept the terms",
+      "EMAIL_TAKEN": "This email is already in use",
+      "INVALID_CREDENTIALS": "Wrong email or password",
+      "VALIDATION_ERROR": "Please check the form",
+      "INTERNAL_ERROR": "Something went wrong. Please try again."
+    }
+  },
+  "shell": {
+    "menu": {
+      "home": "Home",
+      "appointments": "My Appointments",
+      "professionals": "Professionals",
+      "reviews": "Reviews",
+      "notifications": "Notifications",
+      "settings": "Settings",
+      "becomeProfessional": "Become a Professional",
+      "proDashboard": "Professional Dashboard"
+    },
+    "home": {
+      "greeting": "Hi {name}",
+      "subtitle": "What do you want to book today?",
+      "categoriesTitle": "Categories",
+      "recommendedTitle": "Recommended professionals",
+      "recommendedEmpty": "No professionals yet. Check back soon!",
+      "seeAll": "All",
+      "openSettings": "Settings",
+      "becomeProCta": "Work as a professional on RESERVO",
+      "becomeProDescription": "Set up your business profile and start accepting bookings."
+    }
+  },
+  "search": {
+    "title": "Search",
+    "placeholder": "Search professionals…",
+    "filters": "Filters",
+    "filterTitle": "Filter results",
+    "applyFilters": "Apply",
+    "resetFilters": "Reset",
+    "city": "City",
+    "specialty": "Specialty",
+    "minRating": "Minimum rating",
+    "anyRating": "Any",
+    "sort": "Sort",
+    "sortByRating": "Rating",
+    "sortByRecent": "Newest",
+    "category": "Category",
+    "anyCategory": "Any",
+    "resultsCount": "{count, plural, =0 {0 results} =1 {1 result} other {# results}}",
+    "empty": "No professionals match these filters.",
+    "tryAnother": "Try different search criteria.",
+    "noRatingsYet": "No ratings yet",
+    "loadMore": "Load more",
+    "clearFilter": "Clear filter: {label}",
+    "errorLoading": "Couldn't load results. Try again."
+  },
+  "pros": {
+    "profile": {
+      "bookCta": "Book an appointment",
+      "servicesTitle": "Services",
+      "noServices": "No services are available right now.",
+      "scheduleTitle": "Hours",
+      "scheduleEmpty": "No public hours yet.",
+      "addressLabel": "Address",
+      "specialtyLabel": "Specialty",
+      "reviewsTitle": "Reviews",
+      "reviewsEmpty": "No reviews yet.",
+      "reviewsComingSoon": "Coming soon: customer reviews.",
+      "errorLoading": "Couldn't load this profile.",
+      "notFound": "Professional not found.",
+      "durationDisplay": "{minutes} min",
+      "priceFree": "Free"
+    }
+  },
+  "reviews": {
+    "title": "Reviews",
+    "myTitle": "My reviews",
+    "mySubtitle": "Reviews you've submitted.",
+    "myEmpty": "You haven't reviewed any appointment yet.",
+    "writeTitle": "How was your experience?",
+    "writeSubtitle": "Your review helps other customers choose.",
+    "ratingLabel": "Rating",
+    "ratingHelper": "Pick from 1 to 5 stars.",
+    "commentLabel": "Comment",
+    "commentOptional": "(optional)",
+    "submit": "Submit review",
+    "saveChanges": "Save changes",
+    "writeAction": "Write a review",
+    "editAction": "Edit your review",
+    "writtenOn": "{date}",
+    "alreadyReviewedTitle": "You've already reviewed",
+    "alreadyReviewedBody": "You can edit your rating or comment instead.",
+    "errors": {
+      "invalidRating": "Pick a rating from 1 to 5.",
+      "INAPPROPRIATE_CONTENT": "Your comment contains inappropriate content. Please edit it before posting.",
+      "NOT_ELIGIBLE": "You can only review completed appointments.",
+      "ALREADY_REVIEWED": "You've already reviewed this appointment."
+    }
+  },
+  "notifications": {
+    "pageTitle": "Notifications",
+    "bellLabel": "Notifications",
+    "empty": "You have no notifications yet.",
+    "markAllRead": "Mark all as read",
+    "viewAll": "View all notifications",
+    "unreadBadge": "{count} unread",
+    "popoverTitle": "Notifications",
+    "popoverFooter": "Showing the {count} most recent",
+    "reviewRequest": {
+      "title": "How was your experience?",
+      "body": "Leave a review for your appointment with {professionalName} ({serviceName})."
+    },
+    "bookingConfirmed": {
+      "title": "Booking confirmed",
+      "body": "Your appointment with {professionalName} for {serviceName} on {when} is confirmed."
+    },
+    "bookingConfirmedPro": {
+      "title": "New booking",
+      "body": "{customerName} booked {serviceName} on {when}."
+    },
+    "bookingCancelledByCustomer": {
+      "title": "Booking cancelled",
+      "body": "{customerName} cancelled their {serviceName} appointment on {when}."
+    },
+    "bookingCancelledByProfessional": {
+      "title": "Booking cancelled",
+      "body": "{professionalName} cancelled your {serviceName} appointment on {when}."
+    },
+    "bookingRescheduled": {
+      "title": "Appointment rescheduled",
+      "body": "{customerName} moved their {serviceName} appointment to {newWhen}."
+    },
+    "reminder": {
+      "title": "Upcoming appointment",
+      "body": "Reminder: your {serviceName} appointment with {professionalName} is on {when}."
+    },
+    "premiumActivated": {
+      "title": "Premium activated",
+      "body": "Your Premium plan is active until {when}. Analytics is now unlocked."
+    }
+  },
+  "dev": {
+    "reminders": {
+      "title": "Reminder console",
+      "subtitle": "Trigger the reminder cron tick manually and review the recent log.",
+      "runNow": "Run now",
+      "runForce": "Run with force (7-day window)",
+      "helper": "\"Run now\" honors per-user reminderHours and smsEnabled. \"Run with force\" widens the window to 7 days and ignores user opt-outs — useful for demos.",
+      "scanned": "Scanned",
+      "sent": "Sent",
+      "skipped": "Skipped",
+      "failed": "Failed",
+      "completedPast": "Past appointments swept: completed {completed}, review-requests {notified}",
+      "historyTitle": "Recent reminder log",
+      "historyEmpty": "No reminders sent yet.",
+      "row": {
+        "toCustomer": "to {email}",
+        "appointmentAt": "appt: {when}",
+        "sentAt": "sent: {when}"
+      }
+    }
+  },
+  "booking": {
+    "title": "Book an appointment",
+    "withPro": "with {pro}",
+    "steps": {
+      "service": "Service",
+      "datetime": "Date & time",
+      "summary": "Confirm"
+    },
+    "service": {
+      "title": "Pick a service",
+      "subtitle": "Choose what you'd like to book.",
+      "noServices": "This professional offers no services right now."
+    },
+    "datetime": {
+      "title": "Pick a date and time",
+      "subtitle": "Available slots for the service you picked.",
+      "noSlots": "No available slots that day.",
+      "loadingSlots": "Loading available times…"
+    },
+    "summary": {
+      "title": "Confirm your booking",
+      "subtitle": "Check the details and confirm.",
+      "professionalLabel": "Professional",
+      "serviceLabel": "Service",
+      "whenLabel": "When",
+      "durationLabel": "Duration",
+      "priceLabel": "Price",
+      "holdLabel": "We're holding this slot for you until {until}.",
+      "confirm": "Confirm booking",
+      "release": "Cancel, pick another time"
+    },
+    "confirmedTitle": "Booking confirmed!",
+    "confirmedSubtitle": "We've sent you a notification. Find this in My Appointments.",
+    "viewAppointment": "View appointment",
+    "errors": {
+      "SLOT_TAKEN": "Another customer just took this slot. Please pick a different time.",
+      "SLOT_IN_PAST": "That time has already passed.",
+      "SERVICE_NOT_FOUND": "Service is not available.",
+      "SCHEDULE_NOT_FOUND": "No public hours yet.",
+      "HOLD_GONE": "Your tentative hold expired. Please pick the time again.",
+      "ALREADY_CONFIRMED": "You've already confirmed this appointment.",
+      "INVALID_RANGE": "Invalid date range.",
+      "RANGE_TOO_LARGE": "Range too large. Try fewer days."
+    }
+  },
+  "appointments": {
+    "title": "My Appointments",
+    "tabs": {
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "cancelled": "Cancelled"
+    },
+    "empty": "Nothing here yet.",
+    "exploreCta": "Find a professional",
+    "status": {
+      "HELD": "On hold",
+      "CONFIRMED": "Confirmed",
+      "CANCELLED": "Cancelled",
+      "COMPLETED": "Completed"
+    },
+    "cancelledBy": {
+      "CUSTOMER": "by you",
+      "PROFESSIONAL": "by the professional",
+      "SYSTEM": "automatically"
+    },
+    "detail": {
+      "professionalLabel": "Professional",
+      "serviceLabel": "Service",
+      "whenLabel": "When",
+      "durationLabel": "Duration",
+      "priceLabel": "Price",
+      "addressLabel": "Address",
+      "cancelledOn": "Cancelled {date}",
+      "cancelReason": "Reason",
+      "cancelHoldReleased": "Hold released.",
+      "cancelHold": "Cancel hold",
+      "errorLoading": "Couldn't load appointment.",
+      "cancelAppointment": "Cancel appointment",
+      "reschedule": "Reschedule",
+      "cancelTitle": "Cancel this appointment?",
+      "cancelBody": "The slot reopens for booking. We'll let the professional know.",
+      "cancelReasonOptional": "Reason (optional)",
+      "cancelDeadlinePassedTitle": "Cancellation deadline passed",
+      "cancelDeadlinePassedBody": "You can't cancel through the app anymore. Please contact the professional directly.",
+      "rescheduleSubtitle": "Pick a new time for your appointment.",
+      "rescheduleSuccess": "Time updated.",
+      "cancelSuccess": "Appointment cancelled."
+    },
+    "errors": {
+      "CANCEL_DEADLINE_PASSED": "The cancellation deadline has passed. Please contact the professional directly.",
+      "NOT_CONFIRMED": "This appointment isn't in a confirmed state.",
+      "SLOT_UNAVAILABLE": "That time isn't available.",
+      "SLOT_TAKEN": "Another customer just took that slot. Pick a different time.",
+      "SLOT_IN_PAST": "That time has already passed."
+    },
+    "pro": {
+      "title": "Appointments",
+      "subtitle": "Upcoming and recent appointments.",
+      "empty": "No appointments yet.",
+      "manageDescription": "View customers' appointments",
+      "cancelAsPro": "Cancel appointment",
+      "cancelAsProBody": "We'll notify the customer that you cancelled."
+    }
+  },
+  "proSettings": {
+    "title": "Professional settings",
+    "subtitle": "Manage how your bookings work.",
+    "manageDescription": "Cancellation rules and other settings",
+    "cancellationRules": {
+      "title": "Cancellation rules",
+      "subtitle": "How many hours before an appointment customers can cancel themselves.",
+      "deadlineLabel": "Cancellation deadline (hours)",
+      "deadlineHelper": "0 means anytime. 24 means one day before.",
+      "saved": "Rules saved.",
+      "errors": {
+        "invalid": "Enter hours between 0 and 168."
+      }
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your account.",
+    "tabs": {
+      "profile": "Profile",
+      "profileDescription": "Name, contact info, and bio",
+      "notifications": "Notifications",
+      "notificationsDescription": "Control how we reach you",
+      "payments": "Payments",
+      "paymentsDescription": "Saved cards"
+    },
+    "profile": {
+      "title": "Profile",
+      "subtitle": "What professionals see when you book.",
+      "saveSuccess": "Profile updated."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "subtitle": "Choose how you want to hear from us.",
+      "inApp": "In-app notifications",
+      "inAppHelper": "Shown on the bell icon",
+      "email": "Email",
+      "emailHelper": "Confirmations and reminders to your inbox",
+      "sms": "SMS",
+      "smsHelper": "Reminders before your appointment",
+      "push": "Push",
+      "pushHelper": "Push notifications on your device",
+      "reminderHours": "How many hours before your appointment should we remind you?",
+      "saveSuccess": "Settings saved."
+    },
+    "payments": {
+      "title": "Payments",
+      "subtitle": "Manage your saved cards.",
+      "empty": "You don't have any saved cards yet.",
+      "comingSoon": "Coming soon: add and remove cards."
+    }
+  },
+  "becomeProfessional": {
+    "title": "Become a Professional",
+    "stepOf": "Step {current} of {total}",
+    "steps": {
+      "business": "Business",
+      "service": "Service",
+      "schedule": "Schedule",
+      "plan": "Plan"
+    },
+    "business": {
+      "title": "Tell us about your business",
+      "subtitle": "Customers will see this when they search.",
+      "displayName": "Display name",
+      "displayNameHelper": "e.g. \"Dr. Papadopoulos\" or \"Salon Patras\"",
+      "category": "Category",
+      "specialty": "Specialty",
+      "description": "Description",
+      "city": "City",
+      "address": "Address",
+      "company": "Part of a company?",
+      "companyHelper": "Leave empty if you work independently.",
+      "companyName": "Company name"
+    },
+    "service": {
+      "title": "Add your first service",
+      "subtitle": "You can add more later.",
+      "name": "Service name",
+      "duration": "Duration (minutes)",
+      "price": "Price (€)",
+      "description": "Description"
+    },
+    "schedule": {
+      "title": "Set your hours",
+      "subtitle": "Pick the days and hours you accept bookings.",
+      "days": "Working days",
+      "startTime": "Start",
+      "endTime": "End",
+      "preset": "Preset",
+      "presetMonFri": "Mon–Fri 09:00–17:00",
+      "presetMonSat": "Mon–Sat 10:00–18:00"
+    },
+    "plan": {
+      "title": "Choose your plan",
+      "subtitle": "You can always upgrade later.",
+      "free": "Free",
+      "freeDescription": "Free forever. All the basic management tools.",
+      "premium": "Premium",
+      "premiumDescription": "Analytics, top placement in search results.",
+      "premiumComingSoon": "Coming soon — upgrade from settings later."
+    },
+    "submit": "Create my professional account",
+    "errors": {
+      "displayNameRequired": "Display name is required",
+      "cityRequired": "City is required",
+      "addressRequired": "Address is required",
+      "serviceNameRequired": "Service name is required",
+      "invalidDuration": "Duration must be between 5 and 480 minutes",
+      "invalidPrice": "Invalid price",
+      "pickAtLeastOneDay": "Pick at least one day",
+      "invalidTime": "Invalid time (HH:MM format)",
+      "endBeforeStart": "End must be after start",
+      "ALREADY_A_PROFESSIONAL": "You already have a professional account",
+      "COMPANY_NAME_TAKEN": "Company name already taken"
+    }
+  },
+  "categories": {
+    "DOCTOR": "Doctors",
+    "GYM": "Gyms",
+    "HAIR_SALON": "Hair Salons",
+    "BEAUTY_CARE": "Beauty Care"
+  },
+  "days": {
+    "0": "Sun",
+    "1": "Mon",
+    "2": "Tue",
+    "3": "Wed",
+    "4": "Thu",
+    "5": "Fri",
+    "6": "Sat",
+    "long": {
+      "0": "Sunday",
+      "1": "Monday",
+      "2": "Tuesday",
+      "3": "Wednesday",
+      "4": "Thursday",
+      "5": "Friday",
+      "6": "Saturday"
+    }
+  },
+  "pro": {
+    "menu": {
+      "dashboard": "Dashboard",
+      "schedule": "Schedule",
+      "services": "Services",
+      "appointments": "Appointments",
+      "analytics": "Analytics",
+      "premium": "Premium",
+      "company": "Company",
+      "settings": "Settings"
+    },
+    "dashboard": {
+      "title": "Welcome, {name}",
+      "subtitle": "Your professional account is ready.",
+      "comingSoon": "Today's appointments, analytics, and alerts will appear here.",
+      "yourCategory": "Category",
+      "yourCity": "City",
+      "servicesCount": "{count, plural, =0 {no services} =1 {1 service} other {# services}}",
+      "workingDaysCount": "{count, plural, =0 {no working days} =1 {1 working day} other {# working days}}",
+      "manageSchedule": "Manage schedule",
+      "manageScheduleDescription": "Set working hours and time off",
+      "manageServices": "Manage services",
+      "manageServicesDescription": "Pricing and bookable options"
+    },
+    "schedule": {
+      "title": "Schedule",
+      "subtitle": "Set when you accept bookings.",
+      "workingHours": {
+        "title": "Weekly hours",
+        "subtitle": "Open or close each day and pick the hours.",
+        "openLabel": "Open",
+        "closedLabel": "Closed",
+        "saved": "Schedule saved.",
+        "saveAll": "Save schedule"
+      },
+      "blockedPeriods": {
+        "title": "Time off & closures",
+        "subtitle": "Blocked windows where you're not bookable.",
+        "empty": "No upcoming time off.",
+        "add": "Add time off",
+        "addTitle": "New time off",
+        "startsAt": "Starts",
+        "endsAt": "Ends",
+        "reason": "Reason",
+        "deleteConfirmTitle": "Delete this time off?",
+        "deleteConfirmBody": "The window will reopen for bookings."
+      },
+      "errors": {
+        "invalidTime": "Invalid time (HH:MM format)",
+        "endBeforeStart": "End must be after start"
+      }
+    },
+    "services": {
+      "title": "Services",
+      "subtitle": "Your catalog.",
+      "empty": "You haven't added any services yet.",
+      "add": "Add service",
+      "addTitle": "New service",
+      "editTitle": "Edit service",
+      "name": "Name",
+      "description": "Description",
+      "duration": "Duration (minutes)",
+      "price": "Price (€)",
+      "durationDisplay": "{minutes} min",
+      "priceFree": "Free",
+      "active": "Active",
+      "inactive": "Inactive",
+      "deleteConfirmTitle": "Deactivate service?",
+      "deleteConfirmBody": "The service will be hidden from your profile. Past appointments are kept.",
+      "saved": "Saved.",
+      "deleted": "Deactivated.",
+      "errors": {
+        "nameRequired": "Name is required",
+        "invalidDuration": "Duration must be 5–480 minutes",
+        "invalidPrice": "Invalid price",
+        "SERVICE_NAME_TAKEN": "You already have a service with that name"
+      }
+    },
+    "premium": {
+      "title": "Premium",
+      "subtitle": "Unlock analytics and a featured listing.",
+      "currentPlan": "Current plan",
+      "free": "Free",
+      "premium": "Premium",
+      "active": "Active",
+      "cancelled": "Cancelled",
+      "expired": "Expired",
+      "renewsAt": "Renews on {when}",
+      "expiresAt": "Premium runs until {when}",
+      "cancelledAt": "Cancelled on {when}",
+      "monthlyPrice": "{amount} / month",
+      "perks": {
+        "title": "What you get",
+        "analytics": "Analytics dashboard with charts and KPIs",
+        "boost": "Featured at the top of search results",
+        "badge": "Premium badge on your profile and search card"
+      },
+      "form": {
+        "title": "Pay with card",
+        "subtitle": "This is a stub gateway — no real charge happens.",
+        "cardholderName": "Name on card",
+        "cardNumber": "Card number",
+        "cardExpiry": "Expiry (MM/YY)",
+        "cardCvv": "CVV",
+        "submit": "Pay {amount}",
+        "submitting": "Charging…",
+        "successTitle": "Welcome to Premium",
+        "successBody": "Premium is active until {when}. Analytics is unlocked."
+      },
+      "cancelPlan": "Cancel plan",
+      "cancelConfirmTitle": "Cancel Premium?",
+      "cancelConfirmBody": "You'll keep Premium until {when}. After that, analytics will be locked again.",
+      "cancelSuccess": "Premium plan cancelled. You'll retain access until {when}.",
+      "history": {
+        "title": "Payment history",
+        "empty": "No payments yet.",
+        "succeeded": "Succeeded",
+        "failed": "Failed",
+        "cardRow": "Card ending {last4} · {when}"
+      },
+      "errors": {
+        "cardholderName": "Enter the name as it appears on the card",
+        "cardNumber": "Enter a valid 13–19 digit card number",
+        "cardExpiry": "Use MM/YY (e.g. 09/27)",
+        "cardCvv": "Enter the 3 or 4 digit CVV",
+        "ALREADY_ACTIVE": "You already have an active Premium plan.",
+        "CARD_DECLINED": "The card was declined. Try another card or try again later.",
+        "INSUFFICIENT_FUNDS": "Not enough funds on this card.",
+        "GATEWAY_TIMEOUT": "The bank gateway timed out. Please retry.",
+        "NO_ACTIVE_SUBSCRIPTION": "You don't have an active plan to cancel.",
+        "PREMIUM_REQUIRED": "Premium is required to view this."
+      }
+    },
+    "analytics": {
+      "title": "Analytics",
+      "subtitle": "How your business is doing.",
+      "lockedTitle": "Premium required",
+      "lockedBody": "Upgrade to Premium to unlock analytics for your professional account.",
+      "lockedCta": "See plans",
+      "loading": "Loading analytics…",
+      "error": "Could not load analytics.",
+      "kpis": {
+        "revenue30d": "Revenue last 30 days",
+        "revenueLifetime": "Lifetime revenue",
+        "cancellationRate": "Cancellation rate",
+        "totalCompleted": "Completed appointments"
+      },
+      "bookingsByMonth": {
+        "title": "Bookings per month",
+        "subtitle": "Confirmed and completed bookings, last 12 months",
+        "yLabel": "Bookings"
+      },
+      "topServices": {
+        "title": "Top services",
+        "subtitle": "By completed appointments",
+        "empty": "No completed appointments in the last 12 months."
+      },
+      "empty": "Not enough data yet — come back after a few bookings."
+    },
+    "card": {
+      "premiumBadge": "Premium"
+    }
+  }
+}

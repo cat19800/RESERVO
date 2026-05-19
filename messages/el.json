@@ -1,0 +1,624 @@
+{
+  "app": {
+    "name": "RESERVO",
+    "tagline": "Κλείστε ραντεβού εύκολα και γρήγορα"
+  },
+  "common": {
+    "signIn": "Σύνδεση",
+    "signUp": "Εγγραφή",
+    "signOut": "Αποσύνδεση",
+    "email": "Email",
+    "password": "Κωδικός πρόσβασης",
+    "firstName": "Όνομα",
+    "lastName": "Επώνυμο",
+    "phone": "Τηλέφωνο",
+    "city": "Πόλη",
+    "address": "Διεύθυνση",
+    "bio": "Λίγα λόγια για εσένα",
+    "loading": "Φόρτωση…",
+    "submit": "Αποστολή",
+    "cancel": "Ακύρωση",
+    "save": "Αποθήκευση",
+    "saving": "Αποθήκευση…",
+    "saved": "Αποθηκεύτηκε",
+    "back": "Πίσω",
+    "next": "Επόμενο",
+    "finish": "Ολοκλήρωση",
+    "delete": "Διαγραφή",
+    "edit": "Επεξεργασία",
+    "add": "Προσθήκη",
+    "confirm": "Επιβεβαίωση",
+    "close": "Κλείσιμο",
+    "languageSwitcher": "Γλώσσα",
+    "optional": "προαιρετικό"
+  },
+  "auth": {
+    "signIn": {
+      "title": "Σύνδεση",
+      "subtitle": "Καλώς ήρθατε πίσω στο RESERVO.",
+      "submit": "Σύνδεση",
+      "noAccount": "Δεν έχεις λογαριασμό;",
+      "createOne": "Φτιάξε έναν",
+      "forgotPassword": "Ξέχασες τον κωδικό;"
+    },
+    "signUp": {
+      "title": "Δημιουργία λογαριασμού",
+      "subtitle": "Λίγα στοιχεία και είσαι έτοιμος.",
+      "submit": "Δημιουργία λογαριασμού",
+      "haveAccount": "Έχεις ήδη λογαριασμό;",
+      "signInLink": "Συνδέσου",
+      "acceptTerms": "Αποδέχομαι τους Όρους Χρήσης και την Πολιτική Απορρήτου"
+    },
+    "errors": {
+      "passwordTooShort": "Ο κωδικός πρέπει να έχει τουλάχιστον 8 χαρακτήρες",
+      "firstNameRequired": "Το όνομα είναι υποχρεωτικό",
+      "lastNameRequired": "Το επώνυμο είναι υποχρεωτικό",
+      "acceptTermsRequired": "Πρέπει να αποδεχτείς τους όρους",
+      "EMAIL_TAKEN": "Το email χρησιμοποιείται ήδη",
+      "INVALID_CREDENTIALS": "Λανθασμένο email ή κωδικός",
+      "VALIDATION_ERROR": "Ελέγξτε τα στοιχεία της φόρμας",
+      "INTERNAL_ERROR": "Παρουσιάστηκε σφάλμα. Δοκιμάστε ξανά."
+    }
+  },
+  "shell": {
+    "menu": {
+      "home": "Αρχική",
+      "appointments": "Τα Ραντεβού μου",
+      "professionals": "Επαγγελματίες",
+      "reviews": "Αξιολογήσεις",
+      "notifications": "Ειδοποιήσεις",
+      "settings": "Ρυθμίσεις",
+      "becomeProfessional": "Γίνε Επαγγελματίας",
+      "proDashboard": "Επαγγελματικό Πάνελ"
+    },
+    "home": {
+      "greeting": "Γεια σου, {name}",
+      "subtitle": "Τι θες να κλείσεις σήμερα;",
+      "categoriesTitle": "Κατηγορίες",
+      "recommendedTitle": "Προτεινόμενοι επαγγελματίες",
+      "recommendedEmpty": "Δεν υπάρχουν ακόμη επαγγελματίες. Έλα ξανά σύντομα!",
+      "seeAll": "Όλοι",
+      "openSettings": "Ρυθμίσεις",
+      "becomeProCta": "Δούλεψε ως επαγγελματίας στο RESERVO",
+      "becomeProDescription": "Δημιούργησε επιχειρηματικό προφίλ και άρχισε να δέχεσαι κρατήσεις."
+    }
+  },
+  "search": {
+    "title": "Αναζήτηση",
+    "placeholder": "Αναζήτηση επαγγελματιών…",
+    "filters": "Φίλτρα",
+    "filterTitle": "Φιλτράρισμα αποτελεσμάτων",
+    "applyFilters": "Εφαρμογή",
+    "resetFilters": "Καθαρισμός",
+    "city": "Πόλη",
+    "specialty": "Ειδικότητα",
+    "minRating": "Ελάχιστη βαθμολογία",
+    "anyRating": "Όλες",
+    "sort": "Ταξινόμηση",
+    "sortByRating": "Βαθμολογία",
+    "sortByRecent": "Νεότερα",
+    "category": "Κατηγορία",
+    "anyCategory": "Όλες",
+    "resultsCount": "{count, plural, =0 {0 αποτελέσματα} =1 {1 αποτέλεσμα} other {# αποτελέσματα}}",
+    "empty": "Δεν βρέθηκαν επαγγελματίες με αυτά τα κριτήρια.",
+    "tryAnother": "Δοκίμασε διαφορετικά κριτήρια αναζήτησης.",
+    "noRatingsYet": "Χωρίς αξιολογήσεις",
+    "loadMore": "Φόρτωση επιπλέον",
+    "clearFilter": "Καθαρισμός φίλτρου: {label}",
+    "errorLoading": "Σφάλμα φόρτωσης. Δοκίμασε ξανά."
+  },
+  "pros": {
+    "profile": {
+      "bookCta": "Κράτηση ραντεβού",
+      "servicesTitle": "Υπηρεσίες",
+      "noServices": "Δεν υπάρχουν διαθέσιμες υπηρεσίες αυτή τη στιγμή.",
+      "scheduleTitle": "Ωράριο",
+      "scheduleEmpty": "Δεν υπάρχει δημόσιο ωράριο.",
+      "addressLabel": "Διεύθυνση",
+      "specialtyLabel": "Ειδικότητα",
+      "reviewsTitle": "Αξιολογήσεις",
+      "reviewsEmpty": "Δεν έχει αξιολογηθεί ακόμη.",
+      "reviewsComingSoon": "Σύντομα: αξιολογήσεις πελατών.",
+      "errorLoading": "Σφάλμα φόρτωσης προφίλ.",
+      "notFound": "Ο επαγγελματίας δεν βρέθηκε.",
+      "durationDisplay": "{minutes} λεπτά",
+      "priceFree": "Δωρεάν"
+    }
+  },
+  "reviews": {
+    "title": "Αξιολογήσεις",
+    "myTitle": "Οι αξιολογήσεις μου",
+    "mySubtitle": "Αξιολογήσεις που έχεις υποβάλει.",
+    "myEmpty": "Δεν έχεις αξιολογήσει κανένα ραντεβού ακόμη.",
+    "writeTitle": "Πώς ήταν η εμπειρία σου;",
+    "writeSubtitle": "Η αξιολόγησή σου βοηθάει άλλους πελάτες να επιλέξουν.",
+    "ratingLabel": "Βαθμολογία",
+    "ratingHelper": "Διάλεξε από 1 έως 5 αστέρια.",
+    "commentLabel": "Σχόλιο",
+    "commentOptional": "(προαιρετικό)",
+    "submit": "Υποβολή αξιολόγησης",
+    "saveChanges": "Αποθήκευση αλλαγών",
+    "writeAction": "Γράψε αξιολόγηση",
+    "editAction": "Επεξεργασία αξιολόγησης",
+    "writtenOn": "{date}",
+    "alreadyReviewedTitle": "Έχεις ήδη αξιολογήσει",
+    "alreadyReviewedBody": "Μπορείς να επεξεργαστείς τη βαθμολογία ή το σχόλιό σου.",
+    "errors": {
+      "invalidRating": "Διάλεξε βαθμολογία από 1 έως 5.",
+      "INAPPROPRIATE_CONTENT": "Το σχόλιο περιέχει ακατάλληλο περιεχόμενο. Διόρθωσέ το για να δημοσιευτεί.",
+      "NOT_ELIGIBLE": "Μπορείς να αξιολογήσεις μόνο ολοκληρωμένα ραντεβού.",
+      "ALREADY_REVIEWED": "Έχεις ήδη αξιολογήσει αυτό το ραντεβού."
+    }
+  },
+  "notifications": {
+    "pageTitle": "Ειδοποιήσεις",
+    "bellLabel": "Ειδοποιήσεις",
+    "empty": "Δεν έχεις ειδοποιήσεις ακόμη.",
+    "markAllRead": "Σήμανση όλων ως αναγνωσμένες",
+    "viewAll": "Προβολή όλων",
+    "unreadBadge": "{count} νέες",
+    "popoverTitle": "Ειδοποιήσεις",
+    "popoverFooter": "Οι πιο πρόσφατες {count}",
+    "reviewRequest": {
+      "title": "Πώς ήταν η εμπειρία σου;",
+      "body": "Άφησε αξιολόγηση για το ραντεβού σου με {professionalName} ({serviceName})."
+    },
+    "bookingConfirmed": {
+      "title": "Επιβεβαίωση κράτησης",
+      "body": "Το ραντεβού σου με {professionalName} για {serviceName} στις {when} επιβεβαιώθηκε."
+    },
+    "bookingConfirmedPro": {
+      "title": "Νέα κράτηση",
+      "body": "Ο/Η {customerName} έκλεισε ραντεβού για {serviceName} στις {when}."
+    },
+    "bookingCancelledByCustomer": {
+      "title": "Ακύρωση κράτησης",
+      "body": "Ο/Η {customerName} ακύρωσε το ραντεβού του/της για {serviceName} στις {when}."
+    },
+    "bookingCancelledByProfessional": {
+      "title": "Ακύρωση κράτησης",
+      "body": "Ο/Η {professionalName} ακύρωσε το ραντεβού σου για {serviceName} στις {when}."
+    },
+    "bookingRescheduled": {
+      "title": "Αλλαγή ώρας",
+      "body": "Ο/Η {customerName} μετέφερε το ραντεβού του/της για {serviceName} στις {newWhen}."
+    },
+    "reminder": {
+      "title": "Επερχόμενο ραντεβού",
+      "body": "Υπενθύμιση: το ραντεβού σου για {serviceName} με {professionalName} είναι στις {when}."
+    },
+    "premiumActivated": {
+      "title": "Premium ενεργό",
+      "body": "Το Premium πακέτο σου είναι ενεργό έως {when}. Τα στατιστικά ξεκλείδωσαν."
+    }
+  },
+  "dev": {
+    "reminders": {
+      "title": "Κονσόλα υπενθυμίσεων",
+      "subtitle": "Τρέξε χειροκίνητα το cron tick υπενθυμίσεων και δες το πρόσφατο ιστορικό.",
+      "runNow": "Εκτέλεση τώρα",
+      "runForce": "Εκτέλεση με force (παράθυρο 7 ημερών)",
+      "helper": "Το \"Εκτέλεση τώρα\" σέβεται τις ρυθμίσεις reminderHours/smsEnabled κάθε πελάτη. Το \"force\" μεγαλώνει το παράθυρο σε 7 ημέρες και αγνοεί τα opt-outs — χρήσιμο για demo.",
+      "scanned": "Σάρωση",
+      "sent": "Στάλθηκαν",
+      "skipped": "Παραλείφθηκαν",
+      "failed": "Απέτυχαν",
+      "completedPast": "Παρελθόντα ραντεβού: ολοκληρώθηκαν {completed}, αιτήματα αξιολόγησης {notified}",
+      "historyTitle": "Πρόσφατο ιστορικό",
+      "historyEmpty": "Δεν έχουν σταλεί ακόμη υπενθυμίσεις.",
+      "row": {
+        "toCustomer": "προς {email}",
+        "appointmentAt": "ραντεβού: {when}",
+        "sentAt": "στάλθηκε: {when}"
+      }
+    }
+  },
+  "booking": {
+    "title": "Κράτηση ραντεβού",
+    "withPro": "με {pro}",
+    "steps": {
+      "service": "Υπηρεσία",
+      "datetime": "Ημερομηνία & ώρα",
+      "summary": "Επιβεβαίωση"
+    },
+    "service": {
+      "title": "Διάλεξε υπηρεσία",
+      "subtitle": "Επίλεξε τι θα κλείσεις σήμερα.",
+      "noServices": "Αυτός ο επαγγελματίας δεν προσφέρει υπηρεσίες αυτή τη στιγμή."
+    },
+    "datetime": {
+      "title": "Διάλεξε ημερομηνία και ώρα",
+      "subtitle": "Διαθέσιμα slots για την υπηρεσία που επέλεξες.",
+      "noSlots": "Δεν υπάρχουν διαθέσιμα slots για αυτή την ημέρα.",
+      "loadingSlots": "Φόρτωση διαθέσιμων ωρών…"
+    },
+    "summary": {
+      "title": "Επιβεβαίωση κράτησης",
+      "subtitle": "Έλεγξε τα στοιχεία και επιβεβαίωσε.",
+      "professionalLabel": "Επαγγελματίας",
+      "serviceLabel": "Υπηρεσία",
+      "whenLabel": "Πότε",
+      "durationLabel": "Διάρκεια",
+      "priceLabel": "Τιμή",
+      "holdLabel": "Κρατάμε αυτή την ώρα για σένα έως {until}.",
+      "confirm": "Επιβεβαίωση κράτησης",
+      "release": "Άκυρο, διάλεξε άλλη ώρα"
+    },
+    "confirmedTitle": "Η κράτηση επιβεβαιώθηκε!",
+    "confirmedSubtitle": "Σου στείλαμε ειδοποίηση. Τα ραντεβού σου είναι στη \"Τα Ραντεβού μου\".",
+    "viewAppointment": "Προβολή ραντεβού",
+    "errors": {
+      "SLOT_TAKEN": "Αυτή η ώρα μόλις δεσμεύτηκε από άλλον πελάτη. Διάλεξε άλλη.",
+      "SLOT_IN_PAST": "Αυτή η ώρα έχει ήδη περάσει.",
+      "SERVICE_NOT_FOUND": "Η υπηρεσία δεν είναι διαθέσιμη.",
+      "SCHEDULE_NOT_FOUND": "Δεν υπάρχει δημόσιο ωράριο.",
+      "HOLD_GONE": "Η προσωρινή κράτηση έληξε. Διάλεξε ξανά την ώρα.",
+      "ALREADY_CONFIRMED": "Έχεις ήδη επιβεβαιώσει αυτό το ραντεβού.",
+      "INVALID_RANGE": "Μη έγκυρο εύρος ημερομηνιών.",
+      "RANGE_TOO_LARGE": "Πολύ μεγάλο εύρος. Δοκίμασε λιγότερες ημέρες."
+    }
+  },
+  "appointments": {
+    "title": "Τα Ραντεβού μου",
+    "tabs": {
+      "upcoming": "Επερχόμενα",
+      "past": "Παρελθόν",
+      "cancelled": "Ακυρωμένα"
+    },
+    "empty": "Δεν έχεις ραντεβού εδώ ακόμη.",
+    "exploreCta": "Βρες έναν επαγγελματία",
+    "status": {
+      "HELD": "Σε αναμονή",
+      "CONFIRMED": "Επιβεβαιωμένο",
+      "CANCELLED": "Ακυρωμένο",
+      "COMPLETED": "Ολοκληρωμένο"
+    },
+    "cancelledBy": {
+      "CUSTOMER": "από εσένα",
+      "PROFESSIONAL": "από τον επαγγελματία",
+      "SYSTEM": "αυτόματα"
+    },
+    "detail": {
+      "professionalLabel": "Επαγγελματίας",
+      "serviceLabel": "Υπηρεσία",
+      "whenLabel": "Πότε",
+      "durationLabel": "Διάρκεια",
+      "priceLabel": "Τιμή",
+      "addressLabel": "Διεύθυνση",
+      "cancelledOn": "Ακυρώθηκε {date}",
+      "cancelReason": "Αιτία",
+      "cancelHoldReleased": "Η προσωρινή κράτηση ακυρώθηκε.",
+      "cancelHold": "Ακύρωση κράτησης",
+      "errorLoading": "Σφάλμα φόρτωσης ραντεβού.",
+      "cancelAppointment": "Ακύρωση ραντεβού",
+      "reschedule": "Αλλαγή ώρας",
+      "cancelTitle": "Σίγουρα θες να ακυρώσεις;",
+      "cancelBody": "Η ώρα θα ξανανοίξει για κρατήσεις. Θα ενημερώσουμε τον επαγγελματία.",
+      "cancelReasonOptional": "Αιτιολογία (προαιρετικό)",
+      "cancelDeadlinePassedTitle": "Πέρασε η προθεσμία ακύρωσης",
+      "cancelDeadlinePassedBody": "Δεν μπορείς να ακυρώσεις από την εφαρμογή. Επικοινώνησε απευθείας με τον επαγγελματία.",
+      "rescheduleSubtitle": "Διάλεξε νέα ώρα για το ραντεβού σου.",
+      "rescheduleSuccess": "Η ώρα άλλαξε.",
+      "cancelSuccess": "Το ραντεβού ακυρώθηκε."
+    },
+    "errors": {
+      "CANCEL_DEADLINE_PASSED": "Πέρασε η προθεσμία ακύρωσης. Επικοινώνησε απευθείας με τον επαγγελματία.",
+      "NOT_CONFIRMED": "Αυτό το ραντεβού δεν είναι σε κατάσταση επιβεβαίωσης.",
+      "SLOT_UNAVAILABLE": "Αυτή η ώρα δεν είναι διαθέσιμη.",
+      "SLOT_TAKEN": "Αυτή η ώρα μόλις δεσμεύτηκε. Διάλεξε άλλη.",
+      "SLOT_IN_PAST": "Αυτή η ώρα έχει ήδη περάσει."
+    },
+    "pro": {
+      "title": "Ραντεβού",
+      "subtitle": "Επερχόμενα και πρόσφατα ραντεβού.",
+      "empty": "Δεν υπάρχουν ραντεβού ακόμη.",
+      "manageDescription": "Δες ραντεβού των πελατών σου",
+      "cancelAsPro": "Ακύρωση ραντεβού",
+      "cancelAsProBody": "Θα ενημερώσουμε τον πελάτη ότι ακύρωσες το ραντεβού."
+    }
+  },
+  "proSettings": {
+    "title": "Επαγγελματικές ρυθμίσεις",
+    "subtitle": "Διαχειρίσου το πώς λειτουργούν οι κρατήσεις σου.",
+    "manageDescription": "Κανόνες ακύρωσης και άλλες ρυθμίσεις",
+    "cancellationRules": {
+      "title": "Κανόνες ακύρωσης",
+      "subtitle": "Πόσες ώρες πριν το ραντεβού επιτρέπεις στους πελάτες να ακυρώσουν.",
+      "deadlineLabel": "Προθεσμία ακύρωσης (ώρες)",
+      "deadlineHelper": "0 σημαίνει \"όποτε θέλει ο πελάτης\". 24 = μία ημέρα πριν.",
+      "saved": "Οι κανόνες αποθηκεύτηκαν.",
+      "errors": {
+        "invalid": "Δώσε αριθμό ωρών μεταξύ 0 και 168."
+      }
+    }
+  },
+  "settings": {
+    "title": "Ρυθμίσεις",
+    "subtitle": "Διαχειρίσου τον λογαριασμό σου.",
+    "tabs": {
+      "profile": "Προφίλ",
+      "profileDescription": "Όνομα, στοιχεία επικοινωνίας και βιογραφικό",
+      "notifications": "Ειδοποιήσεις",
+      "notificationsDescription": "Έλεγξε πώς θα ενημερώνεσαι",
+      "payments": "Πληρωμές",
+      "paymentsDescription": "Αποθηκευμένες κάρτες"
+    },
+    "profile": {
+      "title": "Προφίλ",
+      "subtitle": "Τα στοιχεία που βλέπουν οι επαγγελματίες όταν κάνεις κράτηση.",
+      "saveSuccess": "Το προφίλ ενημερώθηκε."
+    },
+    "notifications": {
+      "title": "Ειδοποιήσεις",
+      "subtitle": "Επίλεξε πώς θέλεις να λαμβάνεις ειδοποιήσεις.",
+      "inApp": "Ειδοποιήσεις στην εφαρμογή",
+      "inAppHelper": "Φαίνονται στο εικονίδιο καμπάνας",
+      "email": "Email",
+      "emailHelper": "Επιβεβαιώσεις και υπενθυμίσεις στο email σου",
+      "sms": "SMS",
+      "smsHelper": "Υπενθυμίσεις πριν το ραντεβού",
+      "push": "Push",
+      "pushHelper": "Push notifications στη συσκευή σου",
+      "reminderHours": "Πόσες ώρες πριν το ραντεβού να σε υπενθυμίζουμε;",
+      "saveSuccess": "Οι ρυθμίσεις αποθηκεύτηκαν."
+    },
+    "payments": {
+      "title": "Πληρωμές",
+      "subtitle": "Διαχειρίσου τις αποθηκευμένες σου κάρτες.",
+      "empty": "Δεν έχεις αποθηκευμένες κάρτες ακόμη.",
+      "comingSoon": "Σύντομα: προσθήκη και διαγραφή καρτών."
+    }
+  },
+  "becomeProfessional": {
+    "title": "Γίνε Επαγγελματίας",
+    "stepOf": "Βήμα {current} από {total}",
+    "steps": {
+      "business": "Επιχείρηση",
+      "service": "Υπηρεσία",
+      "schedule": "Ωράριο",
+      "plan": "Πακέτο"
+    },
+    "business": {
+      "title": "Πες μας για την επιχείρησή σου",
+      "subtitle": "Αυτά θα βλέπουν οι πελάτες όταν σε αναζητούν.",
+      "displayName": "Όνομα προβολής",
+      "displayNameHelper": "π.χ. \"Δρ. Παπαδόπουλος\" ή \"Salon Patras\"",
+      "category": "Κατηγορία",
+      "specialty": "Ειδικότητα",
+      "description": "Περιγραφή",
+      "city": "Πόλη",
+      "address": "Διεύθυνση",
+      "company": "Ανήκει σε εταιρία;",
+      "companyHelper": "Άφησέ το κενό αν δουλεύεις ανεξάρτητα.",
+      "companyName": "Όνομα εταιρίας"
+    },
+    "service": {
+      "title": "Πρόσθεσε την πρώτη σου υπηρεσία",
+      "subtitle": "Μπορείς να προσθέσεις περισσότερες αργότερα.",
+      "name": "Όνομα υπηρεσίας",
+      "duration": "Διάρκεια (λεπτά)",
+      "price": "Τιμή (€)",
+      "description": "Περιγραφή"
+    },
+    "schedule": {
+      "title": "Όρισε το ωράριό σου",
+      "subtitle": "Επίλεξε ημέρες και ώρες για να δέχεσαι κρατήσεις.",
+      "days": "Ημέρες εργασίας",
+      "startTime": "Έναρξη",
+      "endTime": "Λήξη",
+      "preset": "Πρότυπο",
+      "presetMonFri": "Δευ–Παρ 09:00–17:00",
+      "presetMonSat": "Δευ–Σαβ 10:00–18:00"
+    },
+    "plan": {
+      "title": "Διάλεξε πακέτο",
+      "subtitle": "Μπορείς πάντα να αναβαθμίσεις αργότερα.",
+      "free": "Δωρεάν",
+      "freeDescription": "Δωρεάν για πάντα. Όλα τα βασικά εργαλεία διαχείρισης.",
+      "premium": "Premium",
+      "premiumDescription": "Στατιστικά, προβολή στην κορυφή των αποτελεσμάτων.",
+      "premiumComingSoon": "Σύντομα — μπορείς να αναβαθμίσεις από τις ρυθμίσεις."
+    },
+    "submit": "Δημιουργία επαγγελματικού λογαριασμού",
+    "errors": {
+      "displayNameRequired": "Το όνομα προβολής είναι υποχρεωτικό",
+      "cityRequired": "Η πόλη είναι υποχρεωτική",
+      "addressRequired": "Η διεύθυνση είναι υποχρεωτική",
+      "serviceNameRequired": "Το όνομα της υπηρεσίας είναι υποχρεωτικό",
+      "invalidDuration": "Η διάρκεια πρέπει να είναι μεταξύ 5 και 480 λεπτών",
+      "invalidPrice": "Η τιμή δεν είναι έγκυρη",
+      "pickAtLeastOneDay": "Διάλεξε τουλάχιστον μία ημέρα",
+      "invalidTime": "Μη έγκυρη ώρα (μορφή HH:MM)",
+      "endBeforeStart": "Η λήξη πρέπει να είναι μετά την έναρξη",
+      "ALREADY_A_PROFESSIONAL": "Έχεις ήδη επαγγελματικό λογαριασμό",
+      "COMPANY_NAME_TAKEN": "Το όνομα εταιρίας υπάρχει ήδη"
+    }
+  },
+  "categories": {
+    "DOCTOR": "Γιατροί",
+    "GYM": "Γυμναστήρια",
+    "HAIR_SALON": "Κομμωτήρια",
+    "BEAUTY_CARE": "Beauty Care"
+  },
+  "days": {
+    "0": "Κυρ",
+    "1": "Δευ",
+    "2": "Τρι",
+    "3": "Τετ",
+    "4": "Πεμ",
+    "5": "Παρ",
+    "6": "Σαβ",
+    "long": {
+      "0": "Κυριακή",
+      "1": "Δευτέρα",
+      "2": "Τρίτη",
+      "3": "Τετάρτη",
+      "4": "Πέμπτη",
+      "5": "Παρασκευή",
+      "6": "Σάββατο"
+    }
+  },
+  "pro": {
+    "menu": {
+      "dashboard": "Πάνελ",
+      "schedule": "Ωράριο",
+      "services": "Υπηρεσίες",
+      "appointments": "Ραντεβού",
+      "analytics": "Στατιστικά",
+      "premium": "Premium",
+      "company": "Εταιρία",
+      "settings": "Ρυθμίσεις"
+    },
+    "dashboard": {
+      "title": "Καλώς ήρθες, {name}",
+      "subtitle": "Ο επαγγελματικός σου λογαριασμός είναι έτοιμος.",
+      "comingSoon": "Σύντομα θα δεις εδώ τα σημερινά ραντεβού, στατιστικά και ειδοποιήσεις.",
+      "yourCategory": "Κατηγορία",
+      "yourCity": "Πόλη",
+      "servicesCount": "{count, plural, =0 {καμία υπηρεσία} =1 {1 υπηρεσία} other {# υπηρεσίες}}",
+      "workingDaysCount": "{count, plural, =0 {καμία εργάσιμη ημέρα} =1 {1 εργάσιμη ημέρα} other {# εργάσιμες ημέρες}}",
+      "manageSchedule": "Διαχείριση ωραρίου",
+      "manageScheduleDescription": "Όρισε ώρες εργασίας και άδειες",
+      "manageServices": "Διαχείριση υπηρεσιών",
+      "manageServicesDescription": "Τιμοκατάλογος και επιλογές κράτησης"
+    },
+    "schedule": {
+      "title": "Ωράριο",
+      "subtitle": "Όρισε πότε δέχεσαι κρατήσεις.",
+      "workingHours": {
+        "title": "Εβδομαδιαίο ωράριο",
+        "subtitle": "Άνοιξε ή κλείσε κάθε μέρα και διάλεξε ώρες.",
+        "openLabel": "Ανοιχτά",
+        "closedLabel": "Κλειστά",
+        "saved": "Το ωράριο αποθηκεύτηκε.",
+        "saveAll": "Αποθήκευση ωραρίου"
+      },
+      "blockedPeriods": {
+        "title": "Άδειες & κλεισίματα",
+        "subtitle": "Δεσμευμένα διαστήματα όπου δεν δέχεσαι κρατήσεις.",
+        "empty": "Δεν υπάρχουν επερχόμενες άδειες.",
+        "add": "Προσθήκη άδειας",
+        "addTitle": "Νέα άδεια",
+        "startsAt": "Έναρξη",
+        "endsAt": "Λήξη",
+        "reason": "Αιτιολογία",
+        "deleteConfirmTitle": "Διαγραφή άδειας;",
+        "deleteConfirmBody": "Το διάστημα θα ξανανοίξει για κρατήσεις."
+      },
+      "errors": {
+        "invalidTime": "Μη έγκυρη ώρα (μορφή HH:MM)",
+        "endBeforeStart": "Η λήξη πρέπει να είναι μετά την έναρξη"
+      }
+    },
+    "services": {
+      "title": "Υπηρεσίες",
+      "subtitle": "Ο τιμοκατάλογός σου.",
+      "empty": "Δεν έχεις προσθέσει ακόμη υπηρεσίες.",
+      "add": "Προσθήκη υπηρεσίας",
+      "addTitle": "Νέα υπηρεσία",
+      "editTitle": "Επεξεργασία υπηρεσίας",
+      "name": "Όνομα",
+      "description": "Περιγραφή",
+      "duration": "Διάρκεια (λεπτά)",
+      "price": "Τιμή (€)",
+      "durationDisplay": "{minutes} λεπτά",
+      "priceFree": "Δωρεάν",
+      "active": "Ενεργή",
+      "inactive": "Ανενεργή",
+      "deleteConfirmTitle": "Απενεργοποίηση υπηρεσίας;",
+      "deleteConfirmBody": "Η υπηρεσία θα κρυφτεί από το προφίλ σου. Τα προηγούμενα ραντεβού διατηρούνται.",
+      "saved": "Αποθηκεύτηκε.",
+      "deleted": "Απενεργοποιήθηκε.",
+      "errors": {
+        "nameRequired": "Το όνομα είναι υποχρεωτικό",
+        "invalidDuration": "Διάρκεια από 5 έως 480 λεπτά",
+        "invalidPrice": "Η τιμή δεν είναι έγκυρη",
+        "SERVICE_NAME_TAKEN": "Έχεις ήδη υπηρεσία με αυτό το όνομα"
+      }
+    },
+    "premium": {
+      "title": "Premium",
+      "subtitle": "Ξεκλείδωσε στατιστικά και προβολή στην κορυφή.",
+      "currentPlan": "Τρέχον πακέτο",
+      "free": "Δωρεάν",
+      "premium": "Premium",
+      "active": "Ενεργό",
+      "cancelled": "Ακυρωμένο",
+      "expired": "Έληξε",
+      "renewsAt": "Ανανέωση στις {when}",
+      "expiresAt": "Premium έως {when}",
+      "cancelledAt": "Ακυρώθηκε στις {when}",
+      "monthlyPrice": "{amount} / μήνα",
+      "perks": {
+        "title": "Τι κερδίζεις",
+        "analytics": "Στατιστικά με γραφήματα και KPIs",
+        "boost": "Προβολή στην κορυφή των αποτελεσμάτων",
+        "badge": "Σήμα Premium στο προφίλ και στις κάρτες αναζήτησης"
+      },
+      "form": {
+        "title": "Πληρωμή με κάρτα",
+        "subtitle": "Είναι stub gateway — δεν γίνεται πραγματική χρέωση.",
+        "cardholderName": "Όνομα στην κάρτα",
+        "cardNumber": "Αριθμός κάρτας",
+        "cardExpiry": "Λήξη (MM/YY)",
+        "cardCvv": "CVV",
+        "submit": "Πληρωμή {amount}",
+        "submitting": "Χρέωση…",
+        "successTitle": "Καλώς ήρθες στο Premium",
+        "successBody": "Το Premium είναι ενεργό έως {when}. Τα στατιστικά ξεκλείδωσαν."
+      },
+      "cancelPlan": "Ακύρωση πακέτου",
+      "cancelConfirmTitle": "Ακύρωση Premium;",
+      "cancelConfirmBody": "Θα διατηρήσεις το Premium έως {when}. Μετά τα στατιστικά θα κλειδωθούν ξανά.",
+      "cancelSuccess": "Το πακέτο ακυρώθηκε. Έχεις πρόσβαση έως {when}.",
+      "history": {
+        "title": "Ιστορικό πληρωμών",
+        "empty": "Δεν υπάρχουν πληρωμές ακόμη.",
+        "succeeded": "Επιτυχής",
+        "failed": "Απέτυχε",
+        "cardRow": "Κάρτα που τελειώνει σε {last4} · {when}"
+      },
+      "errors": {
+        "cardholderName": "Δώσε το όνομα όπως φαίνεται στην κάρτα",
+        "cardNumber": "Δώσε έγκυρο αριθμό κάρτας 13–19 ψηφίων",
+        "cardExpiry": "Μορφή MM/YY (π.χ. 09/27)",
+        "cardCvv": "Δώσε CVV 3 ή 4 ψηφίων",
+        "ALREADY_ACTIVE": "Έχεις ήδη ενεργό Premium πακέτο.",
+        "CARD_DECLINED": "Η κάρτα απορρίφθηκε. Δοκίμασε άλλη ή ξανά αργότερα.",
+        "INSUFFICIENT_FUNDS": "Δεν υπάρχουν αρκετά διαθέσιμα στην κάρτα.",
+        "GATEWAY_TIMEOUT": "Το gateway της τράπεζας έληξε. Δοκίμασε ξανά.",
+        "NO_ACTIVE_SUBSCRIPTION": "Δεν έχεις ενεργό πακέτο για ακύρωση.",
+        "PREMIUM_REQUIRED": "Χρειάζεσαι Premium για να δεις αυτό."
+      }
+    },
+    "analytics": {
+      "title": "Στατιστικά",
+      "subtitle": "Πώς πάει η δουλειά σου.",
+      "lockedTitle": "Χρειάζεται Premium",
+      "lockedBody": "Αναβάθμισε σε Premium για να ξεκλειδώσεις τα στατιστικά του επαγγελματικού σου λογαριασμού.",
+      "lockedCta": "Δες πακέτα",
+      "loading": "Φόρτωση στατιστικών…",
+      "error": "Δεν φόρτωσαν τα στατιστικά.",
+      "kpis": {
+        "revenue30d": "Έσοδα 30 ημερών",
+        "revenueLifetime": "Συνολικά έσοδα",
+        "cancellationRate": "Ποσοστό ακυρώσεων",
+        "totalCompleted": "Ολοκληρωμένα ραντεβού"
+      },
+      "bookingsByMonth": {
+        "title": "Κρατήσεις ανά μήνα",
+        "subtitle": "Επιβεβαιωμένες και ολοκληρωμένες, τελευταίοι 12 μήνες",
+        "yLabel": "Κρατήσεις"
+      },
+      "topServices": {
+        "title": "Top υπηρεσίες",
+        "subtitle": "Με βάση ολοκληρωμένα ραντεβού",
+        "empty": "Δεν υπάρχουν ολοκληρωμένα ραντεβού στους τελευταίους 12 μήνες."
+      },
+      "empty": "Δεν υπάρχουν ακόμη αρκετά δεδομένα — δοκίμασε μετά από μερικές κρατήσεις."
+    },
+    "card": {
+      "premiumBadge": "Premium"
+    }
+  }
+}
